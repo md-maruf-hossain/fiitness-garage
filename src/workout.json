@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Lunges",
+    "description": "Challenging your balance is an essential part of a well-rounded exercise routine.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/4JCyd8y/1.png"
+  },
+  {
+    "id": "2",
+    "name": "Pushups",
+    "description": "Pushups are one of the most basic yet effective bodyweight moves you can perform because of the number of muscles that are recruited to perform them.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/0rNWwFn/2.png"
+  },
+  {
+    "id": "3",
+    "name": "Squats",
+    "description": "Squats increase lower body and core strength, as well as flexibility in your lower back and hips.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/ykC9VcB/3.png"
+  },
+  {
+    "id": "4",
+    "name": "Standing overhead",
+    "description": "Compound exercises, which utilize multiple joints and muscles, are perfect for busy bees as they work several parts of your body at once.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/z5rPYxy/4.png"
+  },
+  {
+    "id": "5",
+    "name": "Dumbbell rows",
+    "description": "Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/Yjd7yfV/5.png"
+  },
+  {
+    "id": "6",
+    "name": "Single-leg deadlifts",
+    "description": "This is another exercise that challenges your balance.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/0hz7yMn/6.png"
+  },
+  {
+    "id": "7",
+    "name": "Burpees",
+    "description": "An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/hyRLGDH/7.png"
+  },
+  {
+    "id": "8",
+    "name": "Side planks",
+    "description": "A healthy body requires a strong core at its foundation, so don't neglect core-specific moves like the side plank.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/k9D20RX/8.png"
+  },
+  {
+    "id": "9",
+    "name": "Planks",
+    "description": "Planks are an effective way to target both your abdominal muscles and your whole body.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/mDnXdnD/9.png"
+  },
+  {
+    "id": "10",
+    "name": "Glute bridge",
+    "description": "The glute bridge effectively works your entire posterior chain, which isn’t only good for you, but it'll make your booty look perkier, too.",
+    "age": "20-23",
+    "time": 20,
+    "ratings": 4,
+    "img": "https://i.ibb.co/hdk8BTG/10.png"
+  }
+]
