@@ -1,0 +1,44 @@
+.profile-div img{
+    width: 50px;
+    border-radius: 10px;
+}
+.profile-div{
+    text-align: center;
+    position: sticky;
+}
+.user-detail{
+    background-color: rgb(255, 219, 171);
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.break{
+    margin-top: 15px;
+    background-color: rgb(255, 219, 171);
+    padding: 10px;
+    border-radius: 10px;
+}
+.break-btn{
+    padding: 5px;
+    margin: 4px;
+    border-radius: 20px;
+    background-color: rgb(255, 219, 171);
+    border: 1px solid black;
+}
+.break-btn:hover{
+    background-color: rgb(255, 219, 171);
+}
+.activity-completed-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 219, 171);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.activity-completed-btn:hover{
+    background-color: orange;
+}

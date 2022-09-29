@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="navbar">
       <nav className="header">
-        <h2>Fitness Garage</h2>
+        <h1>Fitness Garage</h1>
       </nav>
     </div>
   );

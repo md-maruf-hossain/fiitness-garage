@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Profile from "../Profile/Profile";
 import Workout from "../Workout/Workout";
 import "./Body.css";
 
@@ -28,8 +29,8 @@ const Body = () => {
       </div>
 
       {/* part-02 */}
-      <div>
-        <h1>profile</h1>
+      <div className="profile-div">
+        <Profile></Profile>
       </div>
     </div>
   );

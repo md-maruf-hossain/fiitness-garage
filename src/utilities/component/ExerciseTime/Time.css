@@ -1,0 +1,9 @@
+.time-div{
+    margin-top: 20px;
+    
+}
+.exercise-time{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
