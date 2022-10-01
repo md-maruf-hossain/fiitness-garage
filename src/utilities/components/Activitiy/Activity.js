@@ -1,16 +1,17 @@
 import React from 'react';
 import ActivitySingle from '../ActivitySingle/ActivitySingle';
 import './Activity.css'
-const Activity = ({activities}) => {
+const Activity = ({activities, activityTime, setActivityTime}) => {
 
     return (
         <div className='activity-container'>
             {
                 activities.map((activity) =>(
                     <ActivitySingle
-                    activities = {activity}
                     key={activity.id}
-                    
+                    activities = {activity}
+                    activityTime ={activityTime}
+                    setActivityTime ={setActivityTime}
                     ></ActivitySingle>
                 ))
             }

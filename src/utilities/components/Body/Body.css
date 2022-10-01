@@ -72,3 +72,15 @@
 .activity-completed:hover{
     background-color: orange;
 }
+
+@media screen and (max-width: 425px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .activity-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

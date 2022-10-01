@@ -1,8 +1,20 @@
 import React from 'react';
 import './ActivitySingle.css'
 
-const ActivitySingle = ({activities}) => {
+
+const ActivitySingle = ({activities, activityTime, setActivityTime}) => {
+
     const {name, description, age, img, time} = activities;
+
+
+    const handleAddToTime = () =>{
+        const details = {
+            time
+        }
+        setActivityTime([details]);
+
+
+    }
 
     return (
         <div>
@@ -14,7 +26,7 @@ const ActivitySingle = ({activities}) => {
                     <p><small>For Age: {age}</small></p>
                     <p><small>Time duration: {time}</small></p>
                 </div>
-                <button className="list-added">
+                <button onClick={()=>handleAddToTime} className="list-added">
                     <p>Add to list</p>
                 </button>
             </div>

@@ -1,0 +1,23 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5%;
+}
+.blog-catagory{
+    padding: 5%;
+    margin: 5%;
+    text-align: justify;
+    background-color: rgb(255, 233, 205);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.blog-header h2{
+   text-align: center;
+   margin: 0;
+   margin-top: 20px;
+}
+@media screen and (max-width: 425px) {
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
