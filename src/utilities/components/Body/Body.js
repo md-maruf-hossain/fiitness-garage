@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../Activitiy/Activity";
+import userImage from "../../user.png"
 import "./Body.css";
 
 const Body = () => {
@@ -25,7 +26,53 @@ const Body = () => {
       </div>
 
       <div className="user-container">
-        <h1>i am user</h1>
+        {/* user imager and name and location */}
+        <div className="userName">
+          <img src={userImage} alt="" />
+          <div className="user-name-location">
+            <h4>Maruf Hossain</h4>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      {/* height weight */}
+      <div className="user-measurements">
+        <span>
+          <h4>65kg</h4>
+          <p>Weight</p>
+        </span>
+        <span>
+          <h4>5'8"</h4>
+          <p>Height</p>
+        </span>
+        <span>
+          <h4>22yrs</h4>
+          <p>Age</p>
+        </span>
+      </div>
+      {/* height weight end */}
+      {/* add a break */}
+      <div className="break-container">
+        <h3>Add a break</h3>
+        <button className="break-btn">10s</button>
+        <button className="break-btn">20s</button>
+        <button className="break-btn">30s</button>
+        <button className="break-btn">40s</button>
+        <button className="break-btn">50s</button>
+      </div>
+      {/* add a break end */}
+
+      {/* excercise details */}
+      <div className="activity-detail">
+        <div>
+          <h4>Exercise time: 0 seconds</h4>
+        </div>
+
+        <div>
+          <h4>Break time: 0 seconds</h4>
+        </div>
+      </div>
+      {/* excercise details */}
+      <button className="activity-completed">Activity Completed</button>
       </div>
     </div>
   );

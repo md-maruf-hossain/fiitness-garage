@@ -1,17 +1,31 @@
-.activity-details{
-    background-color: bisque;
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.activity-details {
+  background-color: rgb(255, 237, 214);
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.activity-details img{
-    width: 250px;
-    height: 250px;
-    padding: 5%;
+.activity-details img {
+  width: 250px;
+  height: 250px;
+  padding: 5%;
 }
-.text-container{
-    width: 75%;
+.text-container {
+  width: 75%;
+}
+.list-added {
+  width: 100%;
+  background-color: rgb(255, 191, 112);
+  border: none;
+  border-radius: 2%;
+  cursor: pointer;
+}
+.list-added p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.list-added:hover{
+  background-color: orange;
 }

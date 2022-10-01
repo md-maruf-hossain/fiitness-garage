@@ -14,6 +14,9 @@ const ActivitySingle = ({activities}) => {
                     <p><small>For Age: {age}</small></p>
                     <p><small>Time duration: {time}</small></p>
                 </div>
+                <button className="list-added">
+                    <p>Add to list</p>
+                </button>
             </div>
         </div>
     );

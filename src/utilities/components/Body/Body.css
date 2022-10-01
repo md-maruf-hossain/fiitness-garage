@@ -2,3 +2,73 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+.card-container{
+    padding: 2% 5%;
+}
+.user-container{
+    background-color: rgb(255, 238, 217);
+    padding: 5%;
+
+}
+.userName img{
+    width: 30%;
+    height: 30%;
+    border-radius: 10%;
+}
+.userName{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.userName h4{
+    margin: 0;
+}
+.userName p{
+    margin: 0;
+}
+.user-measurements{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5%;
+    margin-top: 20px;
+    background-color: rgb(255, 233, 205);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5%;
+}
+.user-measurements h4{
+    margin: 0;
+}
+.user-measurements p{
+    margin: 0;
+}
+.break-container{
+    text-align: center;
+    padding: 5%;
+    margin-top: 10%;
+    border-radius: 5%;
+    background-color: rgb(255, 233, 205);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.break-btn{
+    margin: 2%;
+    padding: 2%;
+    border-radius: 100%;
+    background-color: bisque;
+    cursor: pointer;
+}
+.break-btn:hover{
+    background-color: orange;
+}
+
+.activity-completed{
+    width: 100%;
+    padding: 3%;
+    background-color: rgb(255, 212, 160);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+}
+.activity-completed:hover{
+    background-color: orange;
+}
