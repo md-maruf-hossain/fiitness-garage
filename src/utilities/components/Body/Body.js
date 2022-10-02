@@ -36,13 +36,12 @@ const Body = () => {
   }
 
   const filteredTime = activityTime.filter(tm =>{
-    return tm.time
+    return tm.time;
   })
 
   const newTime = filteredTime.reduce((previous, current)=>{
     return previous + current.time;
   }, 0)
-
 
 
 

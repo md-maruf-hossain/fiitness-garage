@@ -9,10 +9,10 @@ const ActivitySingle = ({activities, activityTime, setActivityTime}) => {
 
     const handleAddToTime = () =>{
         const details = {
-            name, description, age, img, time
+            name, age, img, time
         }
 
-        setActivityTime([details]);
+        setActivityTime([details, ...activityTime]);
     }
 
     return (
