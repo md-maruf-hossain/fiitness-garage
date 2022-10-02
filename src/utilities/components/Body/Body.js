@@ -32,7 +32,9 @@ const Body = () => {
     }else{
       localStorage.setItem("breakValue", JSON.stringify([e.target.innerText]))
     }
-    setValue(e.target.innerText);
+    const breakTime = parseInt(e.target.innerText)
+
+    setValue(parseInt(value + breakTime));
   }
 
   const filteredTime = activityTime.filter(tm =>{
