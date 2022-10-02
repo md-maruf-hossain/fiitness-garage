@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 const Body = () => {
   const [activities, setActivities] = useState([]);
   const [activityTime, setActivityTime] = useState([]);
+  // console.log(activityTime)
 
   useEffect(() => {
     fetch("activity.json")
@@ -17,6 +18,33 @@ const Body = () => {
   const btnToast = () => {
     Swal.fire("Good job!", "Activity completed successfully.", "success");
   };
+
+
+  const [value, setValue] = useState([0]);
+  const btnHandler = (e) =>{
+
+
+    const previousBreak = localStorage.getItem("breakValue");
+    const previousBreakValue = JSON.parse(previousBreak);
+
+    if(previousBreakValue){
+      localStorage.setItem("breakValue", JSON.stringify([...previousBreakValue, e.target.innerText]))
+    }else{
+      localStorage.setItem("breakValue", JSON.stringify([e.target.innerText]))
+    }
+    setValue(e.target.innerText);
+  }
+
+  const filteredTime = activityTime.filter(tm =>{
+    return tm.time
+  })
+
+  const newTime = filteredTime.reduce((previous, current)=>{
+    return previous + current.time;
+  }, 0)
+
+
+
 
   return (
     <div className="main-container">
@@ -52,22 +80,22 @@ const Body = () => {
         {/* add a break */}
         <div className="break-container">
           <h3>Add a break</h3>
-          <button className="break-btn">10s</button>
-          <button className="break-btn">20s</button>
-          <button className="break-btn">30s</button>
-          <button className="break-btn">40s</button>
-          <button className="break-btn">50s</button>
+          <button onClick={(e) => btnHandler(e)} className="break-btn">10</button>
+          <button onClick={(e) => btnHandler(e)} className="break-btn">20</button>
+          <button onClick={(e) => btnHandler(e)} className="break-btn">30</button>
+          <button onClick={(e) => btnHandler(e)} className="break-btn">40</button>
+          <button onClick={(e) => btnHandler(e)} className="break-btn">50</button>
         </div>
         {/* add a break end */}
 
         {/* excercise details */}
         <div className="activity-detail">
           <div>
-            <h4>Exercise time seconds</h4>
+            <h4>Exercise {newTime} time seconds</h4>
           </div>
 
           <div>
-            <h4>Break time: 0 seconds</h4>
+            <h4>Break time: {value} seconds</h4>
           </div>
         </div>
         {/* excercise details */}

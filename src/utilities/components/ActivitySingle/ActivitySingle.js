@@ -9,11 +9,10 @@ const ActivitySingle = ({activities, activityTime, setActivityTime}) => {
 
     const handleAddToTime = () =>{
         const details = {
-            time
+            name, description, age, img, time
         }
+
         setActivityTime([details]);
-
-
     }
 
     return (
@@ -26,7 +25,7 @@ const ActivitySingle = ({activities, activityTime, setActivityTime}) => {
                     <p><small>For Age: {age}</small></p>
                     <p><small>Time duration: {time}</small></p>
                 </div>
-                <button onClick={()=>handleAddToTime} className="list-added">
+                <button onClick={handleAddToTime} className="list-added">
                     <p>Add to list</p>
                 </button>
             </div>
