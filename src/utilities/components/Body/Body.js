@@ -92,7 +92,7 @@ const Body = () => {
         {/* excercise details */}
         <div className="activity-detail">
           <div>
-            <h4>Exercise {newTime} time seconds</h4>
+            <h4>Exercise: {newTime} seconds</h4>
           </div>
 
           <div>
